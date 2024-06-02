@@ -14,13 +14,12 @@ modules:
   - name: vara
     buildsystem: simple
     build-commands:
-      - make -C src
+      - make -C src uncomment-flatpak-specific
+      - make -C src vara
       - install -D -s src/vara /app/bin/vara
       - cp -r usr/* /app/
       - install -D in.co.nandakumar.vara.metainfo.xml /app/share/metainfo/in.co.nandakumar.vara.metainfo.xml
     sources:
       - type: archive
-        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.230619.tar.gz
-        sha256: f8ebe9d0a07798015e58c2836790e366cc52681e0bb9ab0a6eb1a4ab1b87a18f
-      - type: patch
-        path: about-dialog-icon.patch
+        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.240602.tar.gz
+        sha256: e40909b7d62de08ec6b891ad9b9bde515caf3a9345ae081ecc6362da97f64b0f

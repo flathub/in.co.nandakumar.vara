@@ -21,4 +21,4 @@ modules:
     sources:
       - type: archive
         url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.240602.tar.gz
-        sha256: e40909b7d62de08ec6b891ad9b9bde515caf3a9345ae081ecc6362da97f64b0f
+        sha256: 11bb8e45049afeb35fe15d6b5dc2c09e16f65ca187acc2dab145b3af32c2eac8

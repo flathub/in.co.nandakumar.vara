@@ -13,7 +13,10 @@ modules:
   - name: vara
     buildsystem: simple
     build-commands:
-      - make -C src uncomment-flatpak-specific
+      # TODO switch back to this in the next release after fixing the Makefile
+      #- make -C src uncomment-flatpak-specific
+      - sed -i 's/^.*\/\/ FLATPAK_DELETE$//' src/ui.c
+      - sed -i 's/\/\/ FLATPAK_UNCOMMENT//' src/ui.c
       - make -C src vara
       - install -D -s src/vara /app/bin/vara
       - cp -r usr/* /app/

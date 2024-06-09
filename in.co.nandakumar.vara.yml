@@ -13,15 +13,12 @@ modules:
   - name: vara
     buildsystem: simple
     build-commands:
-      # TODO switch back to this in the next release after fixing the Makefile
-      #- make -C src uncomment-flatpak-specific
-      - sed -i 's/^.*\/\/ FLATPAK_DELETE$//' src/ui.c
-      - sed -i 's/\/\/ FLATPAK_UNCOMMENT//' src/ui.c
+      - make -C src uncomment-flatpak-specific
       - make -C src vara
       - install -D -s src/vara /app/bin/vara
       - cp -r usr/* /app/
       - install -D in.co.nandakumar.vara.metainfo.xml /app/share/metainfo/in.co.nandakumar.vara.metainfo.xml
     sources:
       - type: archive
-        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.240608.tar.gz
-        sha256: ab7c910358bd6f001f976cd89feb217b732f4dadf66f7c165e766ffe1f83fefe
+        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.240609.tar.gz
+        sha256: f8c7d13a2978175e90bf20477749e288dcdbaaf4eee52d5183ae46e0a9978d2f

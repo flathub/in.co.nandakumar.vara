@@ -20,5 +20,5 @@ modules:
       - install -D in.co.nandakumar.vara.metainfo.xml /app/share/metainfo/in.co.nandakumar.vara.metainfo.xml
     sources:
       - type: archive
-        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.241113.tar.gz
-        sha256: 02167dea11be469f472c927b045797b011d8b31f37bb4aa68eb93ecba66cd03b
+        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.241204.tar.gz
+        sha256: 83d64a6c1a8df4c409ccd5557eee02326ca98cbee39561c5a928fe095cc0d885

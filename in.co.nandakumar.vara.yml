@@ -14,11 +14,9 @@ modules:
     buildsystem: simple
     build-commands:
       - make -C src uncomment-flatpak-specific
-      - make -C src vara
-      - install -D -s src/vara /app/bin/vara
-      - cp -r usr/* /app/
-      - install -D in.co.nandakumar.vara.metainfo.xml /app/share/metainfo/in.co.nandakumar.vara.metainfo.xml
+      - make
+      - PREFIX=/app make install
     sources:
       - type: archive
-        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.250414.tar.gz
-        sha256: aed1844583c24878ee0eeb41725a9ad9d10db0091332f49f8a6bf0b1e2d4834a
+        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.251018.tar.gz
+        sha256: 0cac3edabacea2ba6c384657050af68a33b498c600ed61ab2fba93aeb85a4b73

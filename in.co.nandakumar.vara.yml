@@ -18,5 +18,5 @@ modules:
       - PREFIX=/app make install
     sources:
       - type: archive
-        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.251018.tar.gz
-        sha256: 0cac3edabacea2ba6c384657050af68a33b498c600ed61ab2fba93aeb85a4b73
+        url: https://nandakumar.co.in/software/vara/downloads/0.1/vara-0.1.260926.tar.gz
+        sha256: c5c1332bb06376030889f31fc9ea5855f12ba2b26b4bab994a6dd4c79707279a
